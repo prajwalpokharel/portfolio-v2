@@ -1,0 +1,38 @@
+@keyframes iconHover {
+    0% {
+        content: 'P';
+    }
+    14.28% {
+        content: 'Pr';
+    }
+    28.56% {
+        content: 'Pra';
+    }
+    42.84% {
+        content: 'Praj';
+    }
+    57.14% {
+        content: 'Prajw';
+    }
+    71.42%{
+        content: 'Prajwa';
+    }
+    85.71%{
+        content: 'Prajwal';
+    }
+    100% {
+      content: 'Prajwal';
+    }
+}
+
+@keyframes blink {
+    0% {
+        border-top-color: transparent;
+    }
+    50% {
+        border-top-color: var(--fg-top-main);
+    }
+    100% {
+        border-top-color: transparent;
+    }
+}

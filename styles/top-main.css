@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&family=Zen+Tokyo+Zoo&display=swap');
+
+div.top-main {
+    height: 100vh;
+    width: 100vw;
+    padding: 0 2em;
+    background-color: var(--bg-top-main);
+    overflow: hidden;
+}
+
+nav {
+    height: 9vh;
+    width: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+i.icon-nav {
+    width: 60%;
+    color: var(--fg-top-main);
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: 3.2em;
+}
+
+i.icon-nav::before {
+    content: 'P';
+    padding: 0 2em;
+}
+
+i.icon-nav:hover::before {
+    animation: iconHover 0.3s linear alternate forwards;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul, nav ul li, nav ul li a {
+    height: 100%;
+    width: 100%;
+}
+
+nav ul li a {
+    color: var(--fg-top-main);
+    font-size: 1.75em;
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    position: relative;
+    font-family: 'Public Sans', sans-serif;
+    transition: 250ms all;
+}
+
+nav ul li a:hover {
+    background-color: var(--bg-nav-fade);
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: .2em;
+    left: 0;
+    bottom: 0;
+    background: var(--fg-top-main);
+    transition: transform 0.2s;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+div.top-main main {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-main .main-text {
+    color: var(--fg-top-main);
+    font-size: 2em;
+}
+
+.top-main a.btn {
+    padding: 1.25em 1.75em;
+    border: .25em solid var(--fg-top-main);
+    font-size: 1.25em;
+    color: var(--fg-top-main);
+    text-decoration: none;
+    transition: .2s all ease-in;
+}
+
+.top-main a.btn:hover {
+    background-color: var(--fg-top-main);
+    color: var(--bg-top-main);
+    transform: scale(1.05);
+}
+
+.pointer {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--fg-top-main);
+    animation: blink 2s infinite;
+}

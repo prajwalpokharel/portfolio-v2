@@ -1,0 +1,33 @@
+@import url(./top-main.css);
+@import url(./animations.css);
+@import url(./responsive.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;  /* omit horizontal scroll */
+}
+
+:root {
+    --bg-top-main: #111111;
+    --fg-top-main: #fff8f8;
+    --bg-nav-fade: #1d1d1d;
+}
+
+
+body > main {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+footer {
+    background-color: var(--bg-top-main);
+    color: var(--fg-top-main);
+    display: grid;
+    place-items: center;
+    padding: .75em;
+}
