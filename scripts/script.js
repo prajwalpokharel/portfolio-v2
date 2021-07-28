@@ -11,4 +11,19 @@ window.onload = () => {
         topmain.classList.toggle("blur");
         pcontainer.classList.toggle("blur");
     })
+
+    const learnmore = document.querySelector("#learn-more");
+    learnmore.addEventListener("click", () => {
+        document.querySelector("body > main").scrollIntoView({ 
+            behavior: 'smooth' 
+        });
+    });
+}
+
+function scrollToTop(){
+    window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth' 
+      });      
 }

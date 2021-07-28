@@ -9,6 +9,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;  /* omit horizontal scroll */
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -30,4 +31,17 @@ footer {
     display: grid;
     place-items: center;
     padding: .75em;
+}
+
+.gototop {
+    position: fixed;
+    height: 70px;
+    width: 70px;
+    background-color: rgba(17, 17, 17, 0.5);
+    color: white;
+    bottom: 2em;
+    right: 2em;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
 }
