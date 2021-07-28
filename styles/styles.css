@@ -44,4 +44,6 @@ footer {
     border-radius: 50%;
     display: grid;
     place-items: center;
+    user-select: none;
+    cursor: pointer;
 }
