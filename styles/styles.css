@@ -47,5 +47,5 @@ footer {
     cursor: pointer;
     opacity: 0;
     display: none;
-    transition: 250ms opacity ease-in;
+    transition: 100ms opacity ease-in;
 }
