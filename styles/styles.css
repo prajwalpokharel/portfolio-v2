@@ -37,7 +37,7 @@ footer {
     position: fixed;
     height: 70px;
     width: 70px;
-    background-color: rgba(17, 17, 17, 0.5);
+    background-color: rgba(17, 17, 17, .75);
     color: white;
     bottom: 2em;
     right: 2em;
@@ -45,7 +45,5 @@ footer {
     place-items: center;
     user-select: none;
     cursor: pointer;
-    opacity: 0;
     display: none;
-    transition: 100ms opacity ease-in;
 }

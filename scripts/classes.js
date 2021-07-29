@@ -21,9 +21,6 @@ class scrollToTop {
             } else {
                 element.removeAttribute("style");
             }
-            if (window.pageYOffset >= 50) {
-                element.style = "display: grid; opacity: 1;";
-            }
         });
         element.addEventListener("click", () => {
             window.scroll({
