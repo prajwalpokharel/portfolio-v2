@@ -42,8 +42,10 @@ footer {
     bottom: 2em;
     right: 2em;
     border-radius: 50%;
-    display: grid;
     place-items: center;
     user-select: none;
     cursor: pointer;
+    opacity: 0;
+    display: none;
+    transition: 250ms opacity ease-in;
 }

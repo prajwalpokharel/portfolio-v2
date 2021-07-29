@@ -66,6 +66,7 @@
         transition: .2s transform;
         transform-origin: 85% 0;
         background-color: rgba(0,0,0, 0.7);
+        z-index: 1;
     }
     nav ul.show {
         transform: scale(1);
